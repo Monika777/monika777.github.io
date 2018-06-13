@@ -43,6 +43,7 @@ function createTweet(input) {
     console.log("Do .author wpisano "+quoteAuthor)
     $('.tweet').attr('href', tweet);
     console.log("Do .tweet wpisano "+tweet)
+    $.ajaxSetup({ cache: false });
   }
 }
 // quote generator
