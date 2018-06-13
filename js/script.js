@@ -6,8 +6,13 @@ $.ajaxSetup({ cache: false });
 //get quote Ajax easy version
 function getQuote() {
     console.log("Odpalono funkcję getQuote");
-    $.getJSON(quoteUrl, createTweet);
-}
+    $.ajax({
+      dataType: "json",
+      url: quoteURL,
+      success: createTweet,
+      cache: false
+    });
+    }
 
 //Tweeter
 function createTweet(input) {
