@@ -8,7 +8,7 @@ function getQuote() {
     console.log("Odpalono funkcję getQuote");
     $.ajax({
       dataType: "json",
-      url: quoteURL,
+      url: quoteUrl,
       success: createTweet,
       cache: false
     });
